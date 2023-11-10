@@ -1,8 +1,8 @@
 ---
--hosts: dev
- user: ec2-user
- become: yes
- connection: ssh
+- hosts: dev
+  user: ec2-user
+  become: yes
+  connection: ssh
 
  tasks:
    - name: Install httpd on Dev servers
