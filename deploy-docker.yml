@@ -4,6 +4,6 @@
   become: yes
   connection: ssh
 
- tasks:
-   - name: Install httpd on Dev servers
-     action: yum name=httpd state=installed
+  tasks:
+    - name: Install httpd on Dev servers
+      action: yum name=httpd state=installed
