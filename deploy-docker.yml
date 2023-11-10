@@ -6,4 +6,4 @@
 
  tasks:
    - name: Install httpd on Dev servers
-     action: apt-get name=httpd state=installed
+     action: yum name=httpd state=installed
