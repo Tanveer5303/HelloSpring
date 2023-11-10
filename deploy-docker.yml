@@ -4,6 +4,6 @@
  become: yes
  connection: ssh
 
- task:
+ tasks:
    - name: Install httpd on Dev servers
      action: apt-get name=httpd state=installed
