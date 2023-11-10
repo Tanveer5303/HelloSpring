@@ -1,1 +1,9 @@
+---
+-hosts: dev
+ user: ec2-user
+ become: yes
+ connection: ssh
 
+ task:
+   - name: Install httpd on Dev servers
+     action: apt-get name=httpd state=installed
