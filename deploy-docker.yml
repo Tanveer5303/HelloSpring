@@ -6,4 +6,25 @@
 
   tasks:
     - name: Install httpd on Dev servers
-      action: yum name=httpd state=installed
+      yum: 
+        name: httpd 
+        state: installed
+
+    - name: Installin docker container
+      yum: 
+        name: docker 
+        state: present
+
+    - name: Start Docker
+      service: 
+        name: docker 
+        state: started 
+        enabled: yes
+
+    - name: Start the container
+      docker_container: 
+        name: hellospring 
+        image: "gravitea/hellospringimage:{{DOCKER_TAG}}" 
+        state: started 
+        published_ports: 
+          - 0.0.0.0:8080:8080
