@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM --platform=linux/x86-64 openjdk:17
 VOLUME /tmp
 EXPOSE 80
 ARG JAR_FILE=target/Hello-0.0.1-SNAPSHOT.jar
