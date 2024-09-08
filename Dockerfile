@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file from the host to the working directory in the container
-COPY /Users/tanveer/.jenkins/workspace/CI_Pipeline/target/hHello-0.0.1-SNAPSHOT.jar app.jar
+COPY /Users/tanveer/.jenkins/workspace/CI_Pipeline/target/Hello-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port on which the application will run
 EXPOSE 80
