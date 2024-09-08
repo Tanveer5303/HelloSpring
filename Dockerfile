@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file from the host to the working directory in the container
-COPY target/hellospring.jar app.jar
+COPY hellospring.jar app.jar
 
 # Expose the port on which the application will run
 EXPOSE 80
