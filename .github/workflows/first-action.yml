@@ -10,5 +10,5 @@ jobs:
           echo "completed the print greetings step"                 #define the command that should be executed to the command line
       - name: print Goodbye
         run: |
-          echo "we are done !"
+          echo "we are done ! "
           echo "completed the print Goodbye step"
